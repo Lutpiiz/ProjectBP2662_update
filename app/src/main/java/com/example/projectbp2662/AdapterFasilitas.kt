@@ -13,12 +13,12 @@ class AdapterFasilitas (private val listFasilitas:List<FasilitasModel>):
     class ViewHolder(ItemView: View):RecyclerView.ViewHolder(ItemView){
         val image: ImageView = itemView.findViewById(R.id.perpus)
         val title: TextView = itemView.findViewById(R.id.title)
-        val desc1: TextView = itemView.findViewById(R.id.desc)
-        val desc2: TextView = itemView.findViewById(R.id.textView11)
+        val desc1: TextView = itemView.findViewById(R.id.desc1)
+        val desc2: TextView = itemView.findViewById(R.id.desc2)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterFasilitas.ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_layout_home, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_layout_fasilitas, parent, false)
         return ViewHolder(view)
     }
 

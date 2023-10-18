@@ -43,7 +43,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         btnSpace.setOnClickListener{
-            val intent = Intent(this, AboutActivity::class.java)
+            val intent = Intent(this, ResponsiActivity::class.java)
             startActivity(intent)
         }
 

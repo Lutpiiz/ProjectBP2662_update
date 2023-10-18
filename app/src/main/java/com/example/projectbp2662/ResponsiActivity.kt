@@ -16,5 +16,9 @@ class ResponsiActivity : AppCompatActivity() {
         data.add(FasilitasModel(R.drawable.playground, "Area Bermain", "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet", "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
         data.add(FasilitasModel(R.drawable.foodcourt, "Food Court", "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet", "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"))
 
+        val adapter = AdapterFasilitas(data)
+
+        rvFasilitas.adapter = adapter
+
     }
 }
